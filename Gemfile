@@ -26,7 +26,8 @@ gem 'active_model_serializers', '~> 0.10.0'
 # gem 'rack-cors'
 gem 'will_paginate', '~> 3.1.0'
 gem 'faker'
-gem 'graphql'
+gem 'graphql', '~> 1.6.8'
+gem "graphiql-rails", github: "sabril/graphiql-rails"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
