@@ -1,11 +1,4 @@
 GIT
-  remote: https://github.com/rmosolgo/graphiql-rails.git
-  revision: c2dc1d8f93ddcecd900512e279185bf6c00509e0
-  specs:
-    graphiql-rails (1.4.4)
-      rails
-
-GIT
   remote: https://github.com/thoughtbot/shoulda-matchers.git
   revision: edaf9cb926ee9c59c59729e7a4f8c206b44da8a1
   branch: rails-5
@@ -185,7 +178,6 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   faker
-  graphiql-rails!
   graphql (~> 1.6.8)
   jbuilder (~> 2.5)
   jwt
