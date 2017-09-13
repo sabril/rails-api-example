@@ -1,8 +1,8 @@
-class TodosController < ApplicationController
+class V1::TodosController < ApplicationController
   before_action :set_todo, only: [:show, :update, :destroy]
 
   def index
-    @todos = current_user.todos
+    @todos = current_user.todos.paginate(page: params[:page], per_page: 20)
     json_response(@todos)
   end
 
@@ -26,11 +26,11 @@ class TodosController < ApplicationController
   end
 
   private
-  def todo_params
-    params.permit(:title)
-  end
-  
-  def set_todo
-    @todo = Todo.find(params[:id])
-  end
+    def todo_params
+      params.permit(:title)
+    end
+
+    def set_todo
+      @todo = Todo.find(params[:id])
+    end
 end
